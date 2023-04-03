@@ -1,4 +1,4 @@
-import { add, xor, isGreaterOrEqual, sub, multiply, binaryArrayToInt, intToBinaryArray } from "./intBinary1759.js";
+import { add, xor, isGreaterOrEqual, sub, multiply, binaryArrayToInt, intToBinaryArray, binaryArrayToString } from "./intBinary1759.js";
 function decimalToIEEE754(decimal) {
     const buffer = new ArrayBuffer(4);
     const floatView = new Float32Array(buffer);
@@ -54,4 +54,4 @@ const binary2 = decimalToIEEE754(decimal2);
 const productBinary = multiplyIEEE754(binary1,binary2);
 const productInt = IEEE754ToDecimal(productBinary)
 console.log(`${decimal1} * ${decimal2} = ${productInt}`); 
-console.log(`${binary1} * ${binary2} = ${productBinary}`); 
+console.log(`${binaryArrayToString(binary1)} * ${binaryArrayToString(binary2)} = ${binaryArrayToString(productBinary)}`); 

@@ -26,6 +26,9 @@ export function binaryArrayToInt(binaryArray) {
     }
     return n;
 }
+export function binaryArrayToString(binaryArray) {
+  return binaryArray.map(b=> b? "1":"0").join('');
+}
 export function xor(bit1, bit2) {
   return (bit1 && !bit2) || (!bit1 && bit2);
 }

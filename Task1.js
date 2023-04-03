@@ -1,4 +1,4 @@
-import { intToBinaryArray, binaryArrayToInt, xor } from "./intBinary1759.js";
+import { intToBinaryArray, binaryArrayToInt, xor, binaryArrayToString } from "./intBinary1759.js";
 import { add } from "./intBinary1759.js";
 
 export function multiply(a, b) {
@@ -30,5 +30,5 @@ let productBinary = multiply(aBinary, bBinary);
 let productInt = binaryArrayToInt(productBinary);
 
 console.log(`${aInt} * ${bInt} = ${productInt}`);
-console.log(`${aBinary} * ${bBinary} = ${productBinary}`);
+console.log(`${binaryArrayToString(aBinary)} * ${binaryArrayToString(bBinary)} = ${binaryArrayToString(productBinary)}`);
 

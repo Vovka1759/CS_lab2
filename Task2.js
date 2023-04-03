@@ -1,4 +1,4 @@
-import { intToBinaryArray, binaryArrayToInt, xor, isGreaterOrEqual, sub } from "./intBinary1759.js";
+import { intToBinaryArray, binaryArrayToInt, xor, isGreaterOrEqual, sub, binaryArrayToString } from "./intBinary1759.js";
 
 function div(a, b) {
   let quotient = [];
@@ -43,7 +43,6 @@ let [quotientBinary, remainderBinary] = div(aBinary, bBinary);
 let quotientInt = binaryArrayToInt(quotientBinary);
 let remainderInt = binaryArrayToInt(remainderBinary);
 
-console.log(`${aBinary} / ${bBinary} = ${quotientBinary} and ${remainderBinary}`);
 console.log(`${aInt} / ${bInt} = ${quotientInt} and ${remainderInt}`);
+console.log(`${binaryArrayToString(aBinary)} / ${binaryArrayToString(bBinary)} = ${binaryArrayToString(quotientBinary)} and ${binaryArrayToString(remainderBinary)}`);
 
-// console.log(isGreaterOrEqual([false,false,false,false,false,false,false,true],new Array([false,false,false,false,false,false,false,true].length - intToBinaryArray(5, 4).length).fill(false).concat(intToBinaryArray(5, 4))));
